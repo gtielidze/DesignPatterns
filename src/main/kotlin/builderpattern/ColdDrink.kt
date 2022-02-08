@@ -1,0 +1,9 @@
+package builderpattern
+
+abstract class ColdDrink: Item {
+    override fun packing(): Packing {
+        return Bottle()
+    }
+
+    abstract override fun price(): Double
+}
